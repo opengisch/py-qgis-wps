@@ -231,6 +231,38 @@ corresponds to an 'alias in py-qgis-server <https://py-qgis-server.readthedocs.i
 
 
 
+.. _SERVER_CROSS_ORIGIN:
+
+SERVER_CROSS_ORIGIN
+-------------------
+
+Allows any origin for CORS. If set to 'no', allow only CORS for the 'Origin'
+header.
+
+
+:Type: boolean
+:Section: server
+:Key: cross_origin
+:Env: QGSRV_SERVER_CROSS_ORIGIN
+
+
+
+.. _SERVER_RESTARTMON:
+
+SERVER_RESTARTMON
+-----------------
+
+The file to watch for restarting workers. When the modified date of the file is changed, 
+the processing providers are reloaded.
+
+
+:Type: path
+:Section: server
+:Key: restartmon
+:Env: QGSRV_SERVER_RESTARTMON
+
+
+
 .. _LOGGING_LEVEL:
 
 LOGGING_LEVEL
